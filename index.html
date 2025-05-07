@@ -3,120 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marc Bassal - Portfolio</title>
+  <title>Marc Bassal | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f8ff;
-      color: #333;
-      animation: fadeIn 1s ease-in;
-    }
-
-    header {
-      background-color: #0057b8;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 0.3rem;
-    }
-
-    section {
-      padding: 1.2rem 2rem;
-      opacity: 0;
-      animation: fadeIn 1s ease forwards;
-      animation-delay: 0.5s;
-    }
-
-    h2 {
-      color: #0057b8;
-      margin-bottom: 0.6rem;
-    }
-
-    ul {
-      list-style-type: square;
-      padding-left: 1.5rem;
-      margin-top: 0;
-    }
-
-    .project {
-      margin-bottom: 1rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      background-color: #ffffff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    a {
-      color: #0057b8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      background-color: #0057b8;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Marc Bassal</h1>
-    <p>Social Media Manager • Content Creator • Video Editor • Computer Science Student</p>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>I'M MARC BASSAL</h1>
+      <p>Content Creator • Video Editor • Computer Science Student</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi! I'm Marc, a Computer Science student at Cal State East Bay and a social media content creator with over 100K followers on TikTok. I specialize in video editing, storytelling, and coding cool projects like a garage parking ticket system.</p>
+  <section class="stats">
+    <div class="stat-box">
+      <h2>100K+</h2>
+      <p>Followers</p>
+    </div>
+    <div class="stat-box">
+      <h2>100+</h2>
+      <p>Viral Videos</p>
+    </div>
+    <div class="stat-box">
+      <h2>10+</h2>
+      <p>Local Clients Helped</p>
+    </div>
   </section>
 
-  <section id="skills">
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I'm Marc, a student at Cal State East Bay studying Computer Science and a full-time content creator with 100K+ followers. I specialize in social media growth, video production, and web development.</p>
+  </section>
+
+  <section class="skills">
     <h2>Skills</h2>
     <ul>
       <li>TikTok & Instagram Reels Content Creation</li>
       <li>Video Editing (CapCut, Adobe Premiere Pro, After Effects)</li>
-      <li>Trend Research, Sound Selection & Hashtag Strategy</li>
-      <li>Copywriting for Captions, Hooks & Calls-to-Action</li>
-      <li>Brand Voice & Storytelling</li>
+      <li>Hashtag Strategy & Trend Research</li>
+      <li>Caption Writing, Hooks & CTAs</li>
       <li>Client Communication & Collaboration</li>
       <li>Fluent in English and Arabic</li>
+      <li><strong>Helping local businesses grow their online presence through social media management</strong></li>
     </ul>
   </section>
 
-  <section id="projects">
+  <section class="projects" id="projects">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="project-card">
       <h3>Garage Parking Ticket System</h3>
       <p>A Java-based parking system that generates and manages digital parking tickets. Created for a course project to simulate a real-world garage entry/exit process.</p>
     </div>
-    <div class="project">
+    <div class="project-card">
       <h3>Viral TikTok Campaigns</h3>
-      <p>Produced over 100 short-form videos resulting in more than 100,000 followers, focusing on trends, editing, and hooks for audience engagement.</p>
+      <p>Produced 100+ viral videos focused on trends, audio hooks, and brand storytelling to grow a 100K+ follower base.</p>
     </div>
   </section>
 
-  <section id="contact">
+  <section class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:marc.bassal2@gmail.com">marc.bassal2@gmail.com</a></p>
     <p>Location: Castro Valley, CA</p>
