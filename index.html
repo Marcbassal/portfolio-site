@@ -5,6 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marc Bassal - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8ff;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    header {
+      background-color: #0057b8;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 0.3rem;
+    }
+
+    section {
+      padding: 1.2rem 2rem;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    h2 {
+      color: #0057b8;
+      margin-bottom: 0.6rem;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+      margin-top: 0;
+    }
+
+    .project {
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    a {
+      color: #0057b8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #0057b8;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,7 +88,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi! I'm Marc — a Computer Science student at Cal State East Bay and a social media content creator with over 100K followers on TikTok. I specialize in video editing, storytelling, and coding cool projects like a garage parking ticket system.</p>
+    <p>Hi! I'm Marc, a Computer Science student at Cal State East Bay and a social media content creator with over 100K followers on TikTok. I specialize in video editing, storytelling, and coding cool projects like a garage parking ticket system.</p>
   </section>
 
   <section id="skills">
